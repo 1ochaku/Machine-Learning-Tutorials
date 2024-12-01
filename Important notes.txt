@@ -62,3 +62,11 @@
 	a) Calculate the errors depending upon which model to take.
 	b) Take the one which has least value in evaluation metrics. Implying better model.
 29. Via Joblib we create the model!!
+30. Next we go for testing: steps similar to training set. Here we first remove the price column and then test the model to predict the price on it.
+31. Similarly, we can go for Model Usage by calling the model.
+32. Summary:
+-> First understand the problem statement that is what the objective is. What we have to do as in, predict prices, classify objects etc.
+-> Next when that is done, divide the data set into 2 parts: training and testing set. It can be done randomly or via libraries like stratified sampling.
+-> Creating a pipeline: this is to do repetitive task. As in if the data set is having missing values, then that can be filled and maintained consistently.
+-> Selecting a model and training it: check the estimates and then figure out which one is appropriate one.
+-> Save and Use the model as accordingly needed.
