@@ -1,0 +1,64 @@
+1. Price Prediction: Accuracy
+2. Data Set: Houses features and prices
+3. Model should: Take in features and tell the price
+4. ML model: better to deal with real world data, not just artificial datasets
+5. Model is telling house price is at 10 crore but available is at 3 crore => 7 crore benefit that is, they didn't have to spend. And found the house at lower price.
+6. Before modelling, decide on:
+	a) Supervised, unsupervised or reinforcement learning?
+	b) Classification task or Regression task? : What will be the output like?
+	c) Batch learning or online learning techniques? : What is it trained on?
+	d) Which performance measure? : To tell me the errors.
+	e) Checking assumptions : That is you need number as the output right? If they have to be classified as expensive or cheap, then it could be just simply classification task, instead of regression task.
+7. Software used: JUPYTER notebook.
+8. Homework: Work on the installation part! (DONE)
+9. Machine Learning Problem - Where does the data come from? -> Generally, it comes from the client, or the head which is telling the problem and asking for a solution.
+10. Dataset recommended to be in CSV file. (Excel Sheet)
+11. While modelling, we should be aware about the features we are considering and not merely just using the data set as each feature reveals something.
+12. Std deviation: how much data is spread
+13. 25% or any x% indicates x amount of values are less than that given one.
+14. x% indicates the percentile: that is if I get 90 percentile than 90 percent of the total people are less than me.
+15. Matplotlib helps in visualising the histogram.
+16. Histogram helps in interpreting the data (Remember finance class: Histogram == Distribution)
+17. Separating test set and training data. We use test set on the final data. So next step is to create the test set.
+18. First, to analyze the data using histogram. Then, creating test set to work on later.
+19. Train-Test splitting. 
+	a) If we use random function to generate random set for testing, there is a highly likely chance that the model will be able to guess the test data and the complete model is knowing the whole data set which is not good.
+	b) We should do seeding.
+	c) It can be manually written, the train_test_split function or we can use from scikit learn.
+	d) There are some features which are crucial and should be present in both train and test set. Thus, stratified sampling.
+19b. After stratified sampling is done, we should completely deal with train set henceforth.
+20. Correlations.
+	a) 1 means strong positive correlation.
+	b) For plotting graph related to correlation, we use scatter matrix. 
+21. Missing Attributes.
+	a) Get rid of missing data points.
+	b) Get rid of the whole attribute.
+	c) Set the value to 0, mean, or median.
+22. Since, it can happen that both the training and the test set have missing data and the new ones which might come may have missing values, in that case we must ensure that the 'something' value needs to be added throughout. This can be done automatically in scikit learn.
+23. Scikit-Learn Design.
+	a) 3 types of objects.
+	b) All codes are written here.
+	c) Estimators. It estimates parameters based on a dataset. Example: imputer. It has fit and transform method. Fit method: fits the dataset, and calculates internal parameters. 
+	d) Transformers. It takes input and returns output based on the learnings from fit(). It also has a convenience function called fit_transform() which fits and then transforms. Optimised for running together.
+	e) Predictors. Linear Regression model is an example of predictor. fit() and predict() are two common functions. It also gives score() function which will evaluate the predictions. Take numpy array as input.
+24. Feature Scaling.
+	a) Two methods.
+	b) Min-Max scaling. Normalisation. => (value - min)/(max-min). Values lie from 0 to 1.
+	c) Standardization. => (value - mean)/(std deviation)
+25. Pipeline Creation.
+	a) Feature Scaling. Numerical attributes at same scale give good result.
+	b) Why Pipeline? => For automation.
+	c) Given a dataset, do these steps is what pipeline tells.
+26. Selecting a Desired Model for the Purpose.
+	a) We can try different models like Linear Regression.
+	b) Model select and then fit the data.
+	c) If mean squared error is 0, this means overfitting. It is not accurate. It learns the noise as well.
+	d) So use cross validation.
+27. Cross Validation: using better evaluation technique.
+	a) Training set. K fold training. K groups. For example, K=10, this means divide the training set into K parts, then one by one exclude and find the error.
+	b) That is, 1 2 3 4 5 6 7 8 9 10, first train on 2-10 and then test on 1 and find the error. Next, again go for 3-10 and find the error on 2nd one.
+	c) Cost should be minimum but utility maximum is desirable due to which negative mean squared error is considered in cross validation.
+28. Now model selected like linear regression, decision tree, random forest.
+	a) Calculate the errors depending upon which model to take.
+	b) Take the one which has least value in evaluation metrics. Implying better model.
+29. Via Joblib we create the model!!
