@@ -1,0 +1,24 @@
+1. How do I read a tabular data file into pandas?
+-> tab separated assumed generally.
+-> head() gives first 5 rows.
+-> but we can give parameter as the separator.
+-> we can have our defined columns name as well.
+-> does it only read table? or does it read everything but structure it in a table?
+
+2. How do I select a pandas series from a dataframe?
+-> two object types in pandas: series and dataframe
+-> series are columns of the dataframe
+-> csv file by default comma separated
+-> if there are columns name such that it has space in it or if it is built in function name, then we can't access it with dot method, we have to go for bracket method
+-> example: ufo['City'] or ufo.City
+-> bracket notation much better as it helps in adding new columns too which are combination of old columns
+
+3. Why do some pandas commands end with parentheses, and other commands don't?
+-> describe() function requires atleast one numerical column to show the statistics
+-> dataframes/series have methods and attributes: methods are sort of actions and attributes are the properties
+-> if we want to know what the method or attribute does, we can click on the bracket start '(') and then tap, 'shift+tab'
+
+4. How do I rename columns in a pandas DataFrame?
+-> use inplace to make it permanent
+
+5. 
