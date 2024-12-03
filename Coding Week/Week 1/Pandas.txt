@@ -21,4 +21,36 @@
 4. How do I rename columns in a pandas DataFrame?
 -> use inplace to make it permanent
 
-5. 
+5. How do I remove columns from a pandas DataFrame?
+-> var.shape tells rows and columns
+-> drop method helps in removing a column
+-> multiple columns can be dropped simultaneously
+-> rows can also be deleted by drop function!
+-> default value of axis=0 for rows; have to mention 1 for columns
+
+6. How do I sort a pandas DataFrame or Series?
+-> sort_values() is a series method, asc by default
+-> if not in place mentioned, series not affected
+-> example: movies['title'].sort_values() (SERIES)
+-> example: movies.sort_values('title') (DF)
+
+7. How do I filter rows of a pandas DF by column value?
+-> example: movies[movies.duration>=200]
+-> datatype is Series (inner part)
+-> outer part gives a dataframe with the filtered rows
+
+8. How do I apply multiple filter criteria to a pandas DF?
+-> conditions need to be put inside the bracket and conditions connected by '&', '|'
+-> isin() method is series method
+
+9. Questions answered.
+
+10. How do I use the "axis" parameter in pandas?
+
+11. How do I use string methods in pandas?
+-> String handling section!!
+
+12. How do I change the data type of a pandas series?
+-> example: drinks['beer_servings']=drinks.beer_servings.astype(float)
+
+13. When should I use a groupby in pandas?
