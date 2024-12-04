@@ -54,3 +54,15 @@
 -> example: drinks['beer_servings']=drinks.beer_servings.astype(float)
 
 13. When should I use a groupby in pandas?
+
+14. How do I explore a pandas Series?
+-> note: movies.describe and movies.describe() - both give a different outputs. one is a table description and other is a statistics one.
+
+15. How do I handle missing values in pandas?
+-> missing values excluded in value_counts generally
+-> we can assign them values too
+
+16. What do I know about the pandas index?
+-> index == row labels, and column headers == column names
+-> identification, alignment and selection
+-> particular cell value => loc[index,column_name]
