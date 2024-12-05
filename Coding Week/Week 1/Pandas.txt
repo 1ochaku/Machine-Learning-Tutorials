@@ -66,3 +66,16 @@
 -> index == row labels, and column headers == column names
 -> identification, alignment and selection
 -> particular cell value => loc[index,column_name]
+
+17. How do I select multiple rows and columns from a pandas DF?
+-> loc is for selecting things by label: req 2 parameters
+-> if one row is extracted => it will be a series
+-> iloc also works similar as loc but with numerical indexing
+-> iloc is exclusive notation: [A,B)
+-> loc is inclusive notation: [A,B]
+ 
+18. When should I use the "inplace" parameter in pandas?
+
+19. How do I make my pandas DataFrame smaller and faster?
+-> objects stored as integers by converting to category type
+-> if object column has less number of strings then in that case we convert it to category
