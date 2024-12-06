@@ -79,3 +79,11 @@
 19. How do I make my pandas DataFrame smaller and faster?
 -> objects stored as integers by converting to category type
 -> if object column has less number of strings then in that case we convert it to category
+
+20. How do I use pandas with scikit-learn to create Kaggle submissions?
+-> Predict the survival rate of a passenger (Kaggle Competition)
+
+21. How do I create dummy variables in pandas?
+-> if there are n values then there will be n-1 dummy variables
+
+22. 
